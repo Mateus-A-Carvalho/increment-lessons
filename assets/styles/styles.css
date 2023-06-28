@@ -1,0 +1,81 @@
+:root {
+  --bg-container: #E6E6E6;
+  --bdrs: .5rem;
+  --color: #292933;
+  --bg-btn: #592791;
+  --color-btn: #D7C3EF
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  height: 100vh;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  background: url(/assets/img/bg01.avif);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 35rem;
+  height: 35rem;
+  background-color: var(--bg-container);
+  opacity: .85;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: var(--bdrs);
+  color: var(--color)
+}
+
+.container__heading {
+  font-size: 5rem;
+  text-align: center;
+  margin: 1rem auto;;
+}
+
+.container__display {
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 2.5rem auto;
+}
+
+.container__btn {
+  width: 50%;
+  margin: 2.5rem auto;
+  color: var(--color-btn);
+  background-color: var(--bg-btn);
+  border-radius: var(--bdrs);
+  font-size: 2rem;
+  vertical-align: center;
+  padding: 1rem 2.5rem;
+}
+
+.container__btn:hover {
+  cursor: pointer;
+  opacity: .95;
+  transform: scale(1.01);
+}
+
+.container__btn:active {
+  opacity: .7;
+  transform: scale(.9);
+}
+
+
+
+
+
+
