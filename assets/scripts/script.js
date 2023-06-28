@@ -1,4 +1,5 @@
 const incrementBtn = document.querySelector("#count-btn");
+const eraseBtn = document.querySelector("#erase-btn");
 const countDisplay = document.querySelector("#count-display");
 let count = 0;
 
@@ -10,6 +11,13 @@ function incrementBtnClick() {
   })
 }
 
-incrementBtnClick()
+function eraseBtnClick() {
+  eraseBtn.addEventListener("click", () => {
+    return countDisplay.innerHTML = count = 0;
+  });
+}
+
+eraseBtnClick();
+incrementBtnClick();
 
 
